@@ -43,9 +43,17 @@ const Home = () => {
       {/* Products */}
 
       {/* Cards */}
-         <BuilderCard />
-         <BuilderCard />
-         <BuilderCard />   
+      <Grid container spacing={3} className="p-5 ms-5 me-5">
+      <Grid item xs={12} sm={6} md={4}>
+        <BuilderCard />
+      </Grid>
+      <Grid item xs={12} sm={6} md={4}>
+        <BuilderCard />
+      </Grid>
+      <Grid item xs={12} sm={6} md={4}>
+        <BuilderCard />
+      </Grid>
+    </Grid>
 
       {/* Sign up */}
             <BuilderSignUp />
