@@ -1,5 +1,6 @@
 import { Box, MenuItem, Typography } from '@mui/material'
 import React from 'react'
+import '../css/builderMenu.css'
 
 const pages = [
     "Tools",
@@ -8,28 +9,33 @@ const pages = [
     "Build Supplies",
     "Tooling",
     "BlueHosting",
-  ];
+];
   
 const BuilderMenu = () => {
   return (
     <>
-        <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+      <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
         <Box
           sx={{
             width: "100%",
             display: "flex",
             alignItems: "center",
             textAlign: "center",
+            flexWrap: "wrap",
           }}
         >
           {pages.map((page) => (
             <MenuItem
               className="shadow-sm p-2 m-2"
               key={page}
-              // onClick={handleCloseNavMenu}
+              style={{
+                flex: "1 0 auto", // Set flex to auto to allow for responsive width
+                maxWidth: "250px", // Set maximum width for larger screens
+                width: "100%", // Set width to 100% to allow for responsive behavior
+              }}
             >
               <Typography
-                sx={{ minWidth: 250, fontSize: "20px" }}
+                sx={{ fontSize: "20px", textAlign: "center", width: "100%" }}
                 textAlign="center"
               >
                 {page}

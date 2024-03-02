@@ -1,0 +1,34 @@
+@media (min-width: 1024px) {
+    /* For large screens */
+    .cards {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    /* For medium screens */
+    .cards {
+      padding: 15px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    /* For small screens */
+    .cards {
+      padding: 10px;
+    }
+  }
+
+  .typography-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @media (max-width: 600px) {
+    .typography-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

@@ -1,11 +1,5 @@
 import {
-  Box,
-  Breadcrumbs,
-  Button,
   Grid,
-  Link,
-  MenuItem,
-  Stack,
   Typography,
 } from "@mui/material";
 import React from "react";
@@ -14,13 +8,7 @@ import BuilderSignUp from "./BuilderSignUp";
 import BuilderMenu from "./BuilderMenu";
 import BuilderBreadcrumbs from "./BuilderBreadcrumbs";
 import BuilderInfo from "./BuilderInfo";
-
-
-// function handleClick(event) {
-//     event.preventDefault();
-//     console.info('You clicked a breadcrumb.');
-//   }
-
+import BuilderProducts from "./BuilderProducts";
 
 const Home = () => {
   return (
@@ -41,9 +29,11 @@ const Home = () => {
       <BuilderBreadcrumbs />
       
       {/* Products */}
+      <BuilderProducts />
 
-      {/* Cards */}
-      <Grid container spacing={3} className="p-5 ms-5 me-5">
+      {/* Cards */}   
+      <Typography variant="h4" style={{marginTop: '28px'}}>Related deals you might like for</Typography>
+      <Grid container spacing={3} className="py-5 ms-5 me-5">
       <Grid item xs={12} sm={6} md={4}>
         <BuilderCard />
       </Grid>

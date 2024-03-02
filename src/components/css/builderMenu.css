@@ -1,0 +1,19 @@
+.builder-menu-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  @media (max-width: 600px) {
+    .builder-menu-container {
+      flex-wrap: wrap; /* Allow items to wrap on small screens */
+      justify-content: center; /* Center items horizontally */
+      align-items: flex-start; /* Align items to the start vertically */
+    }
+    
+    .shadow-sm.p-2.m-2 {
+      height: auto; /* Set height to auto for small screens */
+      padding: 8px; /* Adjust padding for smaller spacing */
+    }
+  }
+  

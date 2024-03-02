@@ -8,12 +8,13 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+import "../css/builderCard.css";
 
 const BuilderCard = () => {
   return (
     <>
-      <div className=" container">
-        <Card sx={{ maxWidth: 450 }} className="container p-5 shadow card ">
+      <div className=" ">
+        <Card sx={{ maxWidth: 450 }} className="container shadow card cards ">
           <CardMedia
             component="img"
             alt="builder"
@@ -31,10 +32,7 @@ const BuilderCard = () => {
           <Paper
             elevation={0}
             sx={{
-              // backgroundColor: "#f5f5f5",
               textAlign: "center",
-            //   padding: "5px",
-            //   marginBottom: "5px",
               display: "flex",
               justifyContent: "left",
             }}
@@ -89,16 +87,12 @@ const BuilderCard = () => {
               Computer Modern clasic with wix support
             </Typography>
 
-            <Typography
-              variant="h5"
-              sx={{ display: "inline-flex", alignItems: "center" }}
-            >
+            <Typography variant="h5" className="typography-container">
               <strong>$39.96</strong>
-              <small style={{ marginLeft: "0.5rem", marginRight: "0.5rem" }}>
-                $49.96
-              </small>
+              <small style={{ margin: "0 0.5rem" }}>$49.96</small>
               <span className="text-danger">(20% Off)</span>
             </Typography>
+
           </CardContent>
           <CardActions>
             <Button size="large" variant="contained" fullWidth>

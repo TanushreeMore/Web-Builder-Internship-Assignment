@@ -1,0 +1,18 @@
+.builder-signup {
+    padding: 20px; /* Default padding for desktop */
+    margin: 10px;
+  }
+  
+  @media (max-width: 960px) {
+    .builder-signup {
+      padding: 15px; /* Adjust padding for medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .builder-signup {
+      padding: 10px; /* Adjust padding for small screens */
+      text-align: center;
+    }
+  }
+  

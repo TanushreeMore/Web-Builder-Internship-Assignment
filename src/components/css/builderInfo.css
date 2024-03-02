@@ -1,0 +1,20 @@
+@media (max-width: 600px) {
+    /* For small screens */
+    div > div {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    div > div > div {
+      margin-top: 8px; /* Adjust margin as needed */
+    }
+  }
+
+  @media (max-width: 600px) {
+    /* For small screens */
+    .relevent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
